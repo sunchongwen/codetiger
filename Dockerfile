@@ -1,4 +1,4 @@
-FROM maven:3
+FROM maven:3 AS bd
 WORKDIR /code
 COPY ./ /code
 RUN mvn package -Dmaven.test.skip=true
